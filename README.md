@@ -1,11 +1,11 @@
-# Snake AI 🐍
+# Snake AI
 
 The best snake ai algorithm you will ever see in your life.
 the snake will cover the entire space like a madman until there are no apples left.
 
-## How the Snake AI Works
+## Description
 
-### Core Logic
+### Logic
 
 1. **Direction Alternation**:
    - The snake alternates between turning left or right based on its current position. The direction is determined by the parity of `(x + y) % 2`, where `x` and `y` are the head's coordinates.
@@ -24,11 +24,6 @@ the snake will cover the entire space like a madman until there are no apples le
      - `1`: Safe but not closer to the apple.
      - `2`: Safe and closer to the apple.
    - The AI selects the direction with the higher score. If scores are equal, it defaults to the straight direction (`dir_1`).
-
-### Winning Strategy
-- The snake fills the grid systematically by alternating turns, ensuring no space is left unvisited.
-- By prioritizing safety first and apple proximity second, the AI avoids traps and dead-ends.
-- The apple respawns in a valid empty space, guaranteeing the snake can always reach it until the grid is fully occupied.
 
 ## Requirements
 - Modern web browser (Chrome, Firefox, Edge).
